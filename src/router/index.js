@@ -8,10 +8,12 @@ Vue.use(VueRouter)
 export default new VueRouter({
     routes: [
         {
-            path: '/helloworld',
+            name: 'helloworld',
+            path: '/helloworld/:msg',
             component: HelloWorld
         },
         {
+            name: 'helloearth',
             path: '/helloearth',
             component: HelloEarth
         }

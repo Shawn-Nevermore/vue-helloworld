@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <router-view msg="我是你爸爸"></router-view>
+    <router-view></router-view>
     <list />
   </div>
 </template>
