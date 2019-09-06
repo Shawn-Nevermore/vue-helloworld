@@ -25,7 +25,14 @@ export default {
   methods: {
     getData() {
       this.$http
-        .get("https://cnodejs.org/api/v1/topics")
+        .get("https://cnodejs.org/api/v1/topics", {
+          params: {
+            // 以下是cnode官方api
+            page: 1,
+            tab: "job",
+            limit: 20
+          }
+        })
         .then(result => {
           this.items = result.data.data;
           console.log(result.data.data[0].id);
