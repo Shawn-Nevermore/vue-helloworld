@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <router-view></router-view>
+    <hr />
     <list />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import HelloEarth from "./components/HelloEarth.vue";
+import axioscomp from "./components/AxiosComp.vue";
 import list from "./components/list.vue";
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     HelloWorld,
     HelloEarth,
+    axioscomp,
     list
   }
 };

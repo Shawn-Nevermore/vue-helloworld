@@ -7,6 +7,9 @@
       <li>
         <router-link to="/helloearth">Hello Earth</router-link>
       </li>
+      <li>
+        <router-link to="/axioscomp">Axios Component</router-link>
+      </li>
     </ul>
   </div>
 </template>
